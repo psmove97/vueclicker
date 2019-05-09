@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vue JS</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+
+<div id ="vue">
+	
+	<button @click="high">Значение равно : {{ counter }} </button>
+
+</div>
+
+<script type="text/javascript">
+	var app = new Vue({
+		el: '#vue',
+		data:{
+			counter: 1
+			
+		},
+		created: function(){
+
+		},
+		methods:{
+			high(){
+				this.counter++;
+			}
+
+		}
+
+		
+		
+	})
+</script>
+
+</body>
+</html>
